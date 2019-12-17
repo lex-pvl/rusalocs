@@ -1,0 +1,37 @@
+.products {
+	padding: 100px 0 70px 0;
+	background-color: #f2f5f8;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&-item {
+		width: 264px;
+		background-color: #ffffff;
+		padding-bottom: 44px;
+		margin-bottom: 30px;
+		border-radius: 20px;
+		&-image {
+			width: 100%;
+			height: 137px;
+			text-align: center;
+			padding-top: 36px;
+			img {
+				max-width: 100%;
+			}
+		}
+		&-name {
+			margin-top: 40px;
+			span {
+				display: block;
+				color: #0587d1;
+				@extend %rb;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+			}
+		}
+	}
+}

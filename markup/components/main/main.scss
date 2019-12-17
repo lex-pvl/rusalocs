@@ -1,0 +1,47 @@
+.main {
+	padding: 155px 0;
+	background: url('%=static=%general/bg.png') no-repeat center top / cover;
+	&__slider {
+		&-item {
+			h1 {
+				color: #ffffff;
+				font-size: 35px;
+				@extend %rl;
+				line-height: 41px;
+				max-width: 475px;
+			}
+			.line {
+				display: block;
+				margin: 50px 0;
+				width: 80px;
+				height: 2px;
+				background-color: #ffffff;
+			}
+			p {
+				color: #ffffff;
+				@extend %rr;
+				font-size: 16px;
+				line-height: 28px;
+				max-width: 355px;
+			}
+			a.more {
+				display: inline-block;
+				margin-top: 49px;
+				padding: 17px 32px;
+				text-align: center;
+                background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+                border-radius: 30px;
+                color: #fff;
+                font-size: 16px;
+				@extend %rr;
+
+                svg {
+                	fill: #fff;
+                	width: 7px;
+                	height: 12px;
+                	margin-left: 38px;
+                }
+			}
+		}
+	}
+}

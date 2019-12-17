@@ -1,0 +1,289 @@
+.goods {
+	background-color: #f2f5f8;
+	padding-top: 30px;
+	padding-bottom: 78px;
+	&__bar {
+			@extend %rr;
+			color: #1f2833;
+			font-size: 12px;
+			line-height: 14px;
+		a {
+			@extend %rr;
+			color: #0587d1;
+			font-size: 12px;
+			line-height: 14px;
+			&:last-child {
+				color: #1f2833;
+			}
+		}
+	}
+	&__title {
+		margin-top: 50px;
+		h4 {
+			@extend %rl;
+			color: #1f2833;
+			font-size: 35px;
+			line-height: 38px;
+		}
+		p {
+			@extend %rr;
+			margin-top: 35px;
+			color: #1f2833;
+			font-size: 16px;
+			line-height: 25px;
+		}
+	}
+
+	&__content {
+		margin-top: 39px;
+		&-filters {
+			width: 263px;
+			.sort {
+				text-align: center;
+				border-radius: 8px;
+				background-color: #ffffff;
+				p {
+					padding: 19px 0;
+					@extend %rr;
+					color: #1f2833;
+					font-size: 14px;
+					line-height: 20px;
+					text-transform: uppercase;
+					border-bottom: 1px solid #e1e7ec;
+				}
+			}
+
+			.variants {
+				margin-top: 30px;
+				border-radius: 8px;
+				background-color: #ffffff;
+				a {
+					display: block;
+					padding: 20px 19px;
+
+					color: #1f2833;
+					@extend %rr;
+					font-size: 13px;
+					line-height: 16px;
+					text-transform: uppercase;
+
+					&:not(:last-child) {
+						border-bottom: 1px solid #e1e7ec;
+					}
+					&:hover {
+						background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+						color: #fff;
+					}
+					&.active {
+						background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+						color: #fff;
+					}
+				}
+			}
+
+			.params {
+				margin-top: 30px;
+				border-radius: 8px;
+				background-color: #ffffff;
+				&-power {
+					padding: 23px 24px;
+					border-bottom: 1px solid #e1e7ec;
+					p {
+						@extend %rb;
+						color: #1f2833;
+						font-size: 14px;
+						line-height: 16px;
+						margin-bottom: 12px;
+					}
+					.irs--flat .irs-line {
+						height: 3px;
+					}
+					.irs-from {
+						background-color: #46bdf9;
+						&::before {
+							border-top-color: #46bdf9;
+						}
+					}
+					.irs-to {
+						background-color: #318edf;
+						&::before {
+							border-top-color: #318edf;
+						}
+					}
+					.irs--flat .irs-bar {
+						background-color: transparent;
+						background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+						top: 24px;
+						height: 3px;
+					}
+					.irs--flat .irs-handle {
+						width: 14px;
+						height: 14px;
+						border-radius: 50%;
+						top: 19px;
+					}
+					.irs--flat .irs-handle.from {
+						background-color: #46bdf9;
+					}
+					.irs--flat .irs-handle.from > i:first-child {
+						background-color: #46bdf9;
+					}
+					.irs--flat .irs-handle.to {
+						background-color: #318edf;
+					}
+					.irs--flat .irs-handle.to > i:first-child {
+						background-color: #318edf;
+					}
+				}
+
+				&-light {
+					padding: 23px 24px;
+					border-bottom: 1px solid #e1e7ec;
+					p {
+						@extend %rb;
+						color: #1f2833;
+						font-size: 14px;
+						line-height: 16px;
+						margin-bottom: 12px;
+					}
+					.irs--flat .irs-line {
+						height: 3px;
+					}
+					.irs-from {
+						background-color: #46bdf9;
+						&::before {
+							border-top-color: #46bdf9;
+						}
+					}
+					.irs-to {
+						background-color: #318edf;
+						&::before {
+							border-top-color: #318edf;
+						}
+					}
+					.irs--flat .irs-bar {
+						background-color: transparent;
+						background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+						top: 24px;
+						height: 3px;
+					}
+					.irs--flat .irs-handle {
+						width: 14px;
+						height: 14px;
+						border-radius: 50%;
+						top: 19px;
+					}
+					.irs--flat .irs-handle.from {
+						background-color: #46bdf9;
+					}
+					.irs--flat .irs-handle.from > i:first-child {
+						background-color: #46bdf9;
+					}
+					.irs--flat .irs-handle.to {
+						background-color: #318edf;
+					}
+					.irs--flat .irs-handle.to > i:first-child {
+						background-color: #318edf;
+					}
+				}
+
+				&-def {
+					padding: 23px 24px;
+					border-bottom: 1px solid #e1e7ec;
+					p {
+						@extend %rb;
+						color: #1f2833;
+						font-size: 14px;
+						line-height: 16px;
+						margin-bottom: 12px;
+					}
+					&-select {
+						display: flex;
+						align-items: center;
+						flex-wrap: wrap;
+						span {
+							display: block;
+							width: 45px;
+							height: 23px;
+							border-radius: 3px;
+							background-color: #e5e5e5;
+							margin-left: 5px;
+							margin-bottom: 5px;
+							text-align: center;
+							line-height: 23px;
+							cursor: pointer;
+
+							@extend %rr;
+							color: #1f2833;
+							font-size: 12px;
+							text-transform: uppercase;
+							&.active {
+								color: #fff;
+								background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+							}
+						}
+					}
+				}
+
+				&-mount {
+					padding: 23px 24px;
+					p {
+						@extend %rb;
+						color: #1f2833;
+						font-size: 14px;
+						line-height: 16px;
+						margin-bottom: 12px;
+					}
+					&-select {
+						display: flex;
+						align-items: center;
+						flex-wrap: wrap;
+						span {
+							display: block;
+							width: 83px;
+							height: 23px;
+							border-radius: 3px;
+							background-color: #e5e5e5;
+							margin-left: 5px;
+							margin-bottom: 5px;
+							text-align: center;
+							line-height: 23px;
+							cursor: pointer;
+
+							@extend %rr;
+							color: #1f2833;
+							font-size: 12px;
+							&.selected {
+								color: #fff;
+								background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+							}
+						}
+					}
+				}
+			}
+			
+			.clear {
+				width: 173px;
+				height: 24px;
+				background: #fff;
+				line-height: 24px;
+				border-bottom-left-radius: 30px;
+				border-bottom-right-radius: 30px;
+				&-filters {
+					@extend %rr;
+					color: #000000;
+					font-size: 12px;
+					line-height: 14px;
+
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					svg {
+						margin-right: 5px;
+					}
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,130 @@
+.footer {
+	background-color: #132239;
+	padding: 80px 0 100px 0;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-item {
+		&-copy {
+			h4 {
+				@extend %rr;
+				color: #ffffff;
+				font-size: 12px;
+				line-height: 20px;
+			}
+			p {
+				@extend %rr;
+				color: #8796ab;
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+		&-contacts {
+			margin-top: 34px;
+			.contacts-row {
+				display: flex;
+				align-items: center;
+				&:not(:last-child) {
+					margin-bottom: 5px;
+				}
+				p {
+					@extend %rr;
+					color: #ffffff;
+					font-size: 14px;
+					line-height: 22px;
+					margin-right: 5px;
+				}
+				a {
+					@extend %rr;
+					color: #ffffff;
+					font-size: 14px;
+					line-height: 22px;
+				}
+				a.mail {
+					color: #0587d1;
+				}
+			}
+		}
+		&-social {
+			margin-top: 37px;
+			a {
+				&:not(:last-child) {
+					margin-right: 10px;
+				}
+			}
+		}
+		.white {
+			display: inline-block;
+			@extend %rb;
+			color: #ffffff;
+			font-size: 14px;
+			line-height: 20px;
+			text-transform: uppercase;
+			margin-bottom: 27px !important;
+		}
+		&-about {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 47px;
+			a {
+				@extend %rr;
+				display: inline-block;
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 32px;
+				&:not(:last-child) {
+					margin-bottom: 8px;
+				}
+			}
+		}
+		&-tech {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 47px;
+			a {
+				@extend %rr;
+				display: inline-block;
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 32px;
+				&:not(:last-child) {
+					margin-bottom: 8px;
+				}
+			}
+		}
+
+		&-products {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 47px;
+			a {
+				@extend %rr;
+				display: inline-block;
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 32px;
+				&:not(:last-child) {
+					margin-bottom: 8px;
+				}
+			}
+		}
+
+		&-service {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 47px;
+			a {
+				@extend %rr;
+				display: inline-block;
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 32px;
+				max-width: 261px;
+				&:not(:last-child) {
+					margin-bottom: 8px;
+				}
+			}
+		}
+	}
+}

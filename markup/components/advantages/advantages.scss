@@ -1,0 +1,78 @@
+.advantages {
+	padding: 138px 0 88px 0;
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		h4 {
+			max-width: 500px;
+			width: 100%;
+			color: #1f2833;
+			@extend %rl;
+			font-size: 35px;
+			line-height: 43px;
+		}
+		.open {
+			position: relative;
+			p {
+				max-width: 435px;
+				width: 100%;
+				color: #1f2833;
+				font-size: 18px;
+				line-height: 28px;
+				@extend %rr;
+			}
+			a {
+				display: flex;
+				align-items: center;
+				margin-top: 43px;
+				color: #0587d1;
+				font-size: 17px;
+				line-height: 28px;
+				@extend %rr;
+				svg {
+					margin-left: 7px;
+				}
+			}
+			span.line {
+				display: block;
+				position: absolute;
+				top: 14px;
+				left: -64px;
+				width: 34px;
+				height: 2px;
+				background-color: #1f2833;
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 100px;
+		&-item {
+			max-width: 44%;
+			display: flex;
+			margin-bottom: 50px;
+		}
+		&-image {
+			margin-right: 33px;
+		}
+		&-text {
+			h4 {
+				@extend %rr;
+				color: #1f2833;
+				font-size: 20px;
+				line-height: 28px;
+			}
+			p {
+				margin-top: 24px;
+				@extend %rr;
+				color: #1f2833;
+				font-size: 14px;
+				line-height: 23px;
+			}
+		}
+	}
+}
