@@ -22,6 +22,7 @@ $(document).ready(function() {
 		cart.slideToggle(400);
 		header.toggleClass('header-changed');
 		cartBtn.css('background', 'white');
+		searchBtn.css('background', 'transparent');
 		if ( header.hasClass('header-changed') ) {
 			cartBtn.find('svg').css('fill', '#48c1fb');
 		} else {

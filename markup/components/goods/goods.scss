@@ -36,8 +36,11 @@
 
 	&__content {
 		margin-top: 39px;
+		display: flex;
+		justify-content: space-between;
 		&-filters {
 			width: 263px;
+			flex-shrink: 0;
 			.sort {
 				text-align: center;
 				border-radius: 8px;
@@ -50,6 +53,16 @@
 					line-height: 20px;
 					text-transform: uppercase;
 					border-bottom: 1px solid #e1e7ec;
+				}
+
+				&-select {
+					padding: 15px 21px;
+					.nice-select {
+						float: none;
+						border: none;
+						padding: 0 30px 0 0;
+						white-space: unset;
+					}
 				}
 			}
 
@@ -264,11 +277,13 @@
 			
 			.clear {
 				width: 173px;
+				margin: 0 auto;
 				height: 24px;
 				background: #fff;
 				line-height: 24px;
 				border-bottom-left-radius: 30px;
 				border-bottom-right-radius: 30px;
+				cursor: pointer;
 				&-filters {
 					@extend %rr;
 					color: #000000;
@@ -284,6 +299,111 @@
 				}
 			}
 
+		}
+
+		&-items {
+			margin-left: 30px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&-item {
+			width: 262px;
+			max-height: 340px;
+			border-radius: 8px;
+			background-color: #ffffff;
+			padding: 39px 25px 30px 25px;
+			margin-bottom: 30px;
+			&:not(:nth-child(3n)) {
+				margin-right: 30px;
+			}
+		}
+		&-image {
+			max-width: 231px;
+			height: 160px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				max-width: 100%;
+			}
+		}
+		&-title {
+			margin-top: 33px;
+			a {
+				@extend %rr;
+				color: #2b91d4;
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		&-desc {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			span {
+				display: flex;
+				align-items: center;
+				@extend %rm;
+				color: #1f2833;
+				font-size: 12px;
+				line-height: 20px;
+				&:not(:last-child) {
+					margin-right: 10px;
+				}
+				svg {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	&-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 250px;
+		a.back {
+			@extend %rb;
+			color: #1f2833;
+			font-size: 14px;
+			line-height: 20px;
+
+			display: flex;
+			align-items: center;
+			margin-right: 40px;
+			svg {
+				margin-right: 8px;
+			}
+		}
+		a.forward {
+			@extend %rb;
+			color: #1f2833;
+			font-size: 14px;
+			line-height: 20px;
+
+			display: flex;
+			align-items: center;
+			margin-left: 40px;
+			svg {
+				margin-left: 8px;
+			}
+		}
+		a.page-link {
+			display: block;
+			width: 28px;
+			height: 28px;
+			border-radius: 50%;
+			margin: 0 3px;
+			text-align: center;
+			line-height: 28px;
+
+			@extend %rb;
+			color: #1f2833;
+			font-size: 14px;
+			&:hover {
+				color: #fff;
+				background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+			}
 		}
 	}
 }

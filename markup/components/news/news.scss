@@ -19,11 +19,15 @@
 			line-height: 36px;
 		}
 		a {
-			display: block;
+			display: flex;
+			align-items: center;
 			@extend %rr;
 			color: #ffffff;
 			font-size: 16px;
 			line-height: 18px;
+			svg {
+				margin-left: 5px;
+			}
 		}
 	}
 
