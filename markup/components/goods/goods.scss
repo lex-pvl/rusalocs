@@ -417,3 +417,27 @@
 		}
 	}
 }
+.sort-select .item, .selectize-input{
+	text-align: left;
+	@extend %rr;
+	font-size: 11px;
+	color: #1f2833;
+}
+.sort-select .item .groub-tit{
+	font-size: 14px;
+	@extend %rb;
+}
+.selectize-dropdown-content {
+	width: calc(100% + 42px);
+	background-color: #fff;
+	margin-left: -21px;
+}
+.selectize-dropdown{
+	margin-top: 15px;;
+}
+.sort-select .tit{
+	display: block;
+	@extend %rb;
+	font-weight: bold;
+	font-size: 14px;
+}

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	
-	let searchBtn = $('.header__search'),
+	var searchBtn = $('.header__search'),
 	header = $('.header'),
 	searchInput = $('.header__search-hidden'),
 	cartBtn = $('.header__cart'),
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	});
 
 	function CartValue() {
-		let cartValue = $('#value');
+		var cartValue = $('#value');
 		cartValue.html($('.header__cart-item').length);
 	}
 

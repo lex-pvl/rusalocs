@@ -1,0 +1,117 @@
+.partners{
+	padding: 0px;
+	&__container{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	&__item{
+		width: calc(25% - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 40px;
+		&:hover{
+			.partners__img::before{
+				width: 100%;
+			}
+		}
+	}
+	&__img{
+		width: 100%;
+		height: 140px;
+		border: 1px solid #dfe1e2;
+		padding: 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 23px;
+		position: relative;
+		&::before{
+			position: absolute;
+			content: '';
+			left: 0px;
+			bottom: -3px;
+			height: 3px;
+			width: 165px;
+			background-color: #ff963b;
+			background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+			transition: 0.4s;
+		}
+	}
+	&__title{
+		@extend %rr;
+		font-size: 18px;
+		margin-bottom: 12px;
+		color: #1f2833;
+	}
+	&__url{
+		font-size: 12px;
+		line-height: 12px;
+		color: #0587d1;
+		transition: 0.4s;
+		position: relative;
+	}
+	.team__bar{
+		margin-bottom: 50px;
+	}
+	&__body .wrapper .tabs__content{
+		padding: 60px 0px;
+	}
+	&.tovar__tabs{
+		margin-top: 0;
+	}
+	.title-d{
+		margin-bottom: 30px;
+	}
+	.partners__header{
+		background-color: #f2f6f9;
+		padding-top: 30px;
+	}
+	.partners__header .tabs__caption{
+		margin-left: -15px;
+		margin-right: -15px;;
+	}
+	.partners__header .tabs__caption li{
+		padding: 0px 15px 36px 15px;
+		@extend %rb;
+		font-size: 14px;
+		color: #1f2833;
+		background-color: transparent;
+		position: relative;
+		&::before{
+			position: absolute;
+			left: 15px;
+			bottom: 0px;
+			height: 0px;
+			background-color: #ff812d;
+			width: calc(100% - 30px);
+			content: '';
+			transition: 0.4S;
+		}
+		&.active{
+			padding: 0px 15px 36px 15px;
+			color: #ff812d;
+			background-color: transparent;
+			&::before{
+				height: 3px;
+			}
+		}
+	}
+	.partners__header .tabs__caption{
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch;
+		overflow: visible;
+	}
+	.goods-nav{
+		margin-left: 0;
+		padding-top: 20px;
+	}
+}
+.title-d{
+	color: #1f2833;
+	@extend %rl;
+	font-size: 35px;
+	line-height: 35px;
+}

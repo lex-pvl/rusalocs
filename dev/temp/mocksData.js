@@ -184,6 +184,9 @@ __pages: [{
                 name: 'index',
                 href: 'index.html'
              },{
+                name: 'partners',
+                href: 'partners.html'
+             },{
                 name: 'team',
                 href: 'team.html'
              },{

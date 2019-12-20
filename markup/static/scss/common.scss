@@ -162,31 +162,31 @@ body {
   line-height: 1;
   overflow-x: hidden;
 }
-body::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button,.selectize-dropdown-content::-webkit-scrollbar-button {
   width:5px;
   height:0px
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,.selectize-dropdown-content::-webkit-scrollbar-track {
   background-color:#ecedee
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,.selectize-dropdown-content::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color:#0587d1;
 }
 
-body::-webkit-scrollbar-thumb:hover{
+body::-webkit-scrollbar-thumb:hover,.selectize-dropdown-content::-webkit-scrollbar-thumb:hover {
   background-color:#0587d1;
 }
 
-body::-webkit-resizer{
+body::-webkit-resizer,.selectize-dropdown-content::-webkit-resizer{
   width:4px;
   height:0px
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar,.selectize-dropdown-content::-webkit-scrollbar{
   width: 8px;
 }
 
