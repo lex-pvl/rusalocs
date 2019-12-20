@@ -25,6 +25,11 @@ _template: {
 
 __iconsData: {
     
+        'add': {
+            width: '19px',
+            height: '22px'
+        },
+    
         'advantages1': {
             width: '59px',
             height: '57px'
@@ -65,6 +70,11 @@ __iconsData: {
             height: '13px'
         },
     
+        'backto': {
+            width: '16px',
+            height: '16px'
+        },
+    
         'cart-basket': {
             width: '11px',
             height: '14px'
@@ -90,8 +100,18 @@ __iconsData: {
             height: '15px'
         },
     
+        'download': {
+            width: '13px',
+            height: '16px'
+        },
+    
         'facebook': {
             width: '37px',
+            height: '37px'
+        },
+    
+        'file': {
+            width: '38px',
             height: '37px'
         },
     
@@ -163,6 +183,9 @@ __pages: [{
              },{
                 name: 'index',
                 href: 'index.html'
+             },{
+                name: 'team',
+                href: 'team.html'
              },{
                 name: 'tovar',
                 href: 'tovar.html'

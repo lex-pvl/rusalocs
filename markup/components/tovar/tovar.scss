@@ -1,0 +1,237 @@
+.tovar {
+	padding: 30px 0 54px 0;
+	background-color: #f2f5f8;
+	&__bar {
+		a {
+			display: inline-block;
+			color: #0587d1;
+			@extend %rr;
+			font-size: 12px;
+			line-height: 48px;
+			&:last-child {
+				color: #1f2833;
+			}
+		}
+	}
+	&__info {
+		width: 100%;
+		margin-top: 38px;
+		border-radius: 8px;
+		background-color: #ffffff;
+		padding: 48px 56px 70px 56px;
+		display: flex;
+		align-items: flex-start;
+		&-images {
+			width: 477px;
+			flex-shrink: 0;
+			.fotorama__thumb-border {
+				border-radius: 10px;
+				border: 1px solid #e1e7ec !important;
+				background-image: unset;
+			}
+			.fotorama__img {
+				max-width: 100% !important;
+				left: 0 !important;
+			}
+			.fotorama__thumb {
+				background-color: transparent !important;
+				padding: 0 !important;
+			}
+		}
+
+		.swiper-container {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.gallery-top {
+			width: 100%;
+		}
+		.gallery-thumbs {
+			display: block;
+			height: 20%;
+			box-sizing: border-box;
+			padding: 10px 0;
+		}
+		.gallery-thumbs .swiper-slide {
+			width: 25%;
+			height: 100%;
+			opacity: 0.4;
+		}
+		.gallery-thumbs .swiper-slide-thumb-active {
+			opacity: 1;
+		}
+
+
+		&-params {
+			margin-left: 32px;
+		}
+		&-name {
+			@extend %rl;
+			color: #1f2833;
+			font-size: 30px;
+			line-height: 37px;
+		}
+		&-article {
+			width: 200px;
+			height: 26px;
+			border-radius: 3px;
+			background-color: #e5ebf0;
+			line-height: 26px;
+			margin-top: 16px;
+			text-align: center;
+			span {
+				@extend %rr;
+				color: #1f2833;
+				font-size: 12px;
+				line-height: 25px;
+			}
+		}
+		&-value {
+			margin-top: 30px;
+			.value {
+				margin-bottom: 15px;
+				p {
+					float: left;
+					padding: 0 .4em 0 0;
+					margin: 0;
+					@extend %rr;
+					color: #1f2833;
+					font-size: 14px;
+					line-height: 14px;
+				}
+				span {
+					float: right;
+					padding: 0 0 0 .4em;
+					margin: 0;
+					@extend %rb;
+					color: #1f2833;
+					font-size: 14px;
+					line-height: 14px;
+				}
+				&::after {
+					content: "";
+					display: block;
+					overflow: hidden;
+					height: 10px;
+					border-bottom: 1px dotted #363636;
+				}
+			}
+		}
+		&-btns {
+			display: flex;
+			align-items: center;
+			margin-top: 35px;
+			a.add {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 236px;
+				height: 49px;
+				border-radius: 25px;
+				background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+
+				color: #ffffff;
+				font-size: 16px;
+				@extend %rr;
+				svg {
+					margin-right: 5px;
+				}
+			}
+			a.download {
+				display: flex;
+				align-items: center;
+				@extend %rb;
+				color: #0587d1;
+				font-size: 14px;
+				line-height: 25px;
+				margin-left: 26px;
+				svg {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+
+	&__tabs {
+		margin-top: 43px;
+		.tabs__caption {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			border-radius: 8px 8px 0 0;
+			overflow: hidden;
+			li {
+				padding: 16px 47px;
+				background-color: #e6ecf1;
+				@extend %rr;
+				color: #1f2833;
+				font-size: 16px;
+				cursor: pointer;
+				user-select: none;
+				&.active {
+					background: #fff;
+					padding: 22px 47px 16px 47px;
+					border-radius: 8px 8px 0 0;
+				}
+			}
+		}
+		.tabs__content {
+			padding: 34px 48px;
+			background: #fff;
+  			display: none;
+  			&.active {
+  				display: block;
+  			}
+
+  			h4 {
+				@extend %rm;
+  				color: #1f2833;
+				font-size: 20px;
+				line-height: 24px;
+  			}
+
+  			.files {
+  				margin-top: 17px;
+  				.file {
+  					display: flex;
+  					align-items: center;
+  					margin-bottom: 21px;
+  					&__desc {
+  						margin-left: 10px;
+  						&-name {
+  							p {
+								@extend %rm;
+  								color: #1f2833;
+								font-size: 16px;
+								line-height: 20px;
+  							}
+  						}
+  						&-info {
+  							.file-params {
+  								display: inline-block;
+								@extend %rr;
+								font-size: 13px;
+  							}
+  							.file-format {
+								@extend %rr;
+								font-size: 13px;
+  								text-transform: uppercase;
+  							}
+  							.file-size {
+								@extend %rr;
+								font-size: 13px;
+  							}
+  							a {
+								@extend %rb;
+  								color: #2b91d4;
+								font-size: 14px;
+  							}
+  						}
+  					}
+  				}
+  			}
+		}
+	}
+}

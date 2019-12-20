@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	
-	var swiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.news__container', {
 		slidesPerView: 3,
 		spaceBetween: 30,
 		loop: true,

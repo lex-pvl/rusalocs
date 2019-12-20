@@ -198,6 +198,12 @@
 					.irs--flat .irs-handle.to > i:first-child {
 						background-color: #318edf;
 					}
+					.irs--flat .irs-single {
+						background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+						&::before {
+							border-top-color: #318edf;
+						}
+					}
 				}
 
 				&-def {
@@ -401,6 +407,10 @@
 			color: #1f2833;
 			font-size: 14px;
 			&:hover {
+				color: #fff;
+				background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
+			}
+			&.active {
 				color: #fff;
 				background-image: linear-gradient(to right, #48c1fb 0%, #2f89dc 99%, #2f89dc 100%);
 			}

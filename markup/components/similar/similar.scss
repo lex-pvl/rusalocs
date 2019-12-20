@@ -1,0 +1,94 @@
+.similar {
+	background: #f2f5f8;
+	padding-bottom: 75px;
+	&__title {
+		h3 {
+			@extend %rl;
+			color: #1f2833;
+			font-size: 30px;
+			line-height: 34px;
+			text-align: center;
+		}
+	}
+	&__slider {
+		margin-top: 40px;
+		&-item {
+			width: 262px;
+			max-height: 340px;
+			border-radius: 8px;
+			background-color: #ffffff;
+			padding: 39px 25px 30px 25px;
+			margin-bottom: 30px;
+		}
+		&-image {
+			max-width: 231px;
+			height: 160px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				max-width: 100%;
+			}
+		}
+		&-title {
+			margin-top: 33px;
+			a {
+				@extend %rr;
+				color: #2b91d4;
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		&-desc {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			span {
+				display: flex;
+				align-items: center;
+				@extend %rm;
+				color: #1f2833;
+				font-size: 12px;
+				line-height: 20px;
+				&:not(:last-child) {
+					margin-right: 10px;
+				}
+				svg {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	.swiper-container-horizontal > .swiper-pagination-bullets {
+		bottom: 0;
+		position: relative;
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.swiper-pagination-bullet {
+		width: 5px;
+		height: 5px;
+		background-color: #84909a;
+	}
+	.swiper-pagination-bullet-active {
+		width: 15px;
+		height: 15px;
+		background-color: transparent;
+		border: 1px solid #41b1f2;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-2.5px, -2.5px);
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: #41b1f2;
+		}
+	}
+}
